@@ -4,7 +4,7 @@ main {
  aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba (0, 0, 0, 0.2);  
+    border: 1px solid rgba(0, 0, 0, 0.2);  
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -24,7 +24,7 @@ main {
  p { padding: 0; }
 
  footer {
-    margin-top: lem;
+    margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
  }
