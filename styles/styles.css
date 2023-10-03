@@ -1,38 +1,37 @@
- * {
+* {
    margin: 0;
    padding: 0;
-   box-sizing: broader-box;
+   box-sizing: border-box;                    
 }
- nav {
+
+nav {
    background-color: green;
    padding: 10px;
 }
- nav a {
+
+nav a {
    color: white;
-   padding:10px;
+   padding: 10px;
    display: block;
- }
-
- 
-    
- h1 {
-   color: green;
-   padding: .5rem
 }
-  
 
- main {
+h1 {
+   color: green;
+   padding: 0.5rem;
+}
+
+main {
    max-width: 640px;
 }
 
- main img {
+main img {
    width: 150px;
    height: auto;
    border: 1px solid blue;
    padding: 2px;
    box-shadow: 0 0 30px rgb(141, 185, 141);
    float: right;
-   margin: 0 0 2rew 2rew;
+   margin: 0 0 20px 20px;
 }
 
 aside {
@@ -49,7 +48,7 @@ aside img {
 aside h2 {
    position: absolute;
    top: 10px;
-   left: 1000px;
+   left: 123px;
 }
 
 footer {
@@ -58,20 +57,12 @@ footer {
    text-align: center;
 }
 
-/* class selectors */
+
 .box {
    margin: 1rem;
-   border: 1px solid rgba(0,0,0,.1);
+   border: 1px solid rgba(0, 0, 0, 0.1);
    padding: 1rem;
    background-color: #eee;
    color: #000;
 }
 
-
-
-
-aside h2 {
-   position: absolute;
-   top: 47px;
-   left: 150px;
-}
