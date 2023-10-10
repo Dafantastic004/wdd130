@@ -4,7 +4,7 @@
    box-sizing: border-box;
 }
 
-header,.grid, footer {
+header, .grid, footer {
    max-width: 840px;
    margin: 0 auto;
 }
@@ -27,9 +27,6 @@ nav a {
    transition: color 0.3s ease;
 }
 
-
-
-
 h1 {
    color: blue;
    padding: 0.5rem;
@@ -38,14 +35,13 @@ h1 {
 
 .grid {
    display: grid;
-   grid-template-columns: 1fr 2fr; /* Define grid columns: 30% for aside, 70% for main */
-   gap:20px;
-} 
+   grid-template-columns: 1fr 2fr; /* Define grid columns: 1fr for aside, 2fr for main */
+   gap: 20px;
+}
 
 main {
    margin: 1rem;
-   grid-column: 2/3;  /* Place main content in the second order */
-   
+   grid-column: 2; /* Simplified to 2 for the end column */
 }
 
 main img {
@@ -61,10 +57,9 @@ main img {
 aside {
    width: 20rem;
    position: relative;
-   grid-column: 1/2; /* Place aside content in the first order */
-   grid-row: 1/2;
+   grid-column: 1; /* Simplified to 1 for the start column */
+   grid-row: 1; /* Simplified to 1 for the first row */
 }
-
 
 aside img {
    width: 200px;
@@ -84,8 +79,9 @@ aside h2 {
    background-color: #eee;
    color: #000;
 }
+
 .indent a {
-   padding-left:2rem;
+   padding-left: 2rem;
 }
 
 footer {
