@@ -1,27 +1,51 @@
 * {
    margin: 0;
    padding: 0;
-   box-sizing: border-box;                    
+   box-sizing: border-box;
+}
+
+header,.grid, footer {
+   max-width: 840px;
+   margin: 0 auto;
 }
 
 nav {
-   background-color: green;
-   padding: 10px;
+   background-color: steelblue;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 nav a {
-   color: white;
-   padding: 10px;
+   color: #fff;
+   padding: 0.5rem;
    display: block;
+   text-decoration: none;
+   font-size: 1.2rem;
+   font-weight: 700;
+   transition: color 0.3s ease;
 }
+
+
+
 
 h1 {
-   color: green;
+   color: blue;
    padding: 0.5rem;
+   border-bottom: 1px solid blue;
 }
 
+.grid {
+   display: grid;
+   grid-template-columns: 1fr 2fr; /* Define grid columns: 30% for aside, 70% for main */
+   gap:20px;
+} 
+
 main {
-   max-width: 640px;
+   margin: 1rem;
+   grid-column: 2/3;  /* Place main content in the second order */
+   
 }
 
 main img {
@@ -30,15 +54,17 @@ main img {
    border: 1px solid blue;
    padding: 2px;
    box-shadow: 0 0 30px rgb(141, 185, 141);
-   float: right;
    margin: 0 0 20px 20px;
+   float: right;
 }
 
 aside {
-   width: 20em;
-   text-align: center;
+   width: 20rem;
    position: relative;
+   grid-column: 1/2; /* Place aside content in the first order */
+   grid-row: 1/2;
 }
+
 
 aside img {
    width: 200px;
@@ -48,15 +74,8 @@ aside img {
 aside h2 {
    position: absolute;
    top: 10px;
-   left: 123px;
+   left: 130px;
 }
-
-footer {
-   margin-top: 1em;
-   border-top: 1px solid #000;
-   text-align: center;
-}
-
 
 .box {
    margin: 1rem;
@@ -65,4 +84,14 @@ footer {
    background-color: #eee;
    color: #000;
 }
+.indent a {
+   padding-left:2rem;
+}
 
+footer {
+   grid-row: 2; /* Place the footer in the second row */
+   text-align: center;
+   padding: 1rem;
+   background-color: #ddd;
+   color: #333;
+}
